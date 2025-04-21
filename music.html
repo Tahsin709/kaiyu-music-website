@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>My Music Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h2>Welcome to My Music World</h2>
+            <p>Discover the latest tracks and albums from your favorite artists.</p>
+        </section>
+
+        <section id="music">
+            <h2>Featured Music</h2>
+            <input type="text" id="searchBar" placeholder="Search for songs..." onkeyup="searchSongs()">
+            <div class="music-list" id="musicList">
+                <div class="music-item" data-song="music/matargasti.mp3" data-lyrics="Matargashti khuli sadak mein Tagdi tadak-bhadak mein Ole gire sulagte se sulagte se sadak mein Chhatri na thi bagal mein Aaya hi na akal mein Ke bhaage hum ya bheege hum akad mein to socha phir Geela hua hai jo sukhaana ho ho ho Chaahe zanana ya mardaana ho ho ho ho Attention Phainka naya paasa Phir de gayi jhaansa Aivein mujhe faansa Teri aisi ki ho taisi zindagi Phainka naya paasa Phir de gayi jhaansa Aivein mujhe faansa Chirkut zindagi you know Tu hi hai wo Jis se khela tha main Kho-Kho Khela Kho-Kho Tu hai Laila Shirin Sohni Juliet sun lo Mujhko dhoondo na jungle belon mein WhatsApp pe hoon ha ha ha ha ha Na tera na mera zamana ho ho ho Na yeh zanana na mardaana ho ho ho ho Pakad paana Phainka naya paasa Phir de gayi jhaansa Aivein mujhe faansa Chirkut zindagi you au Tu hi hai wo Jisne khainchi meri dhoti dhoti khainchi Ab tu dhoonde kahaan bande Na main Kaaba Kashi main Twitter pe hoon DP meri dekho hu-hu-hu-hu Sun re sun beliya Dil ne dhokha diya Aankhein mili tumse naazni Mere hosh-o-hawaas kho gaye Ho dil ne ro-ro kaha Yeh aankhein hai dil ki zubaan Khwaab roz-roz dekhe naye Ho dil ka bhanwar bole Sun saathiya Chhup na dupatte mein tu oh chhaliya Prem pujaari ke dil ka bayaan hota raha Rota raha priye To phir Matargashti khuli sadak mein Tagdi tadak-bhadak mein Ole gire sulagte se sulagte se sadak mein Chhatri na thi bagal mein Aaya hi na akal mein Ke bhaage hum ya bheege hum akad mein to socha phir Geela hua hai jo sukhaana ho ho ho Chaahe zanana ya mardaana ho ho ho ho Attention Phainka naya paasa Phir de gayi jhaansa Aivein mujhe faansa Teri aisi ki ho taisi zindagi Phainka naya paasa Phir de gayi jhaansa Aivein mujhe faansa Chirkut zindagi">
+                    <img src="https://i.scdn.co/image/ab67616d00001e02e53dba36f428d356a28f2b8a" alt="Matargashti" class="song-image">
+                    <h3>Matargashti</h3>
+                    <p>Song by Mohit Chauhan ‧ 2015</p>
+                    <button class="playBtn" onclick="playMusic('music/matargasti.mp3', 'Matargashti khuli sadak mein Tagdi tadak-bhadak mein Ole gire sulagte se sulagte se sadak mein Chhatri na thi bagal mein Aaya hi na akal mein Ke bhaage hum ya bheege hum akad mein to socha phir Geela hua hai jo sukhaana ho ho ho Chaahe zanana ya mardaana ho ho ho ho Attention Phainka naya paasa Phir de gayi jhaansa Aivein mujhe faansa Teri aisi ki ho taisi zindagi Phainka naya paasa Phir de gayi jhaansa Aivein mujhe faansa Chirkut zindagi you know Tu hi hai wo Jis se khela tha main Kho-Kho Khela Kho-Kho Tu hai Laila Shirin Sohni Juliet sun lo Mujhko dhoondo na jungle belon mein WhatsApp pe hoon ha ha ha ha ha Na tera na mera zamana ho ho ho Na yeh zanana na mardaana ho ho ho ho Pakad paana Phainka naya paasa Phir de gayi jhaansa Aivein mujhe faansa Chirkut zindagi you au Tu hi hai wo Jisne khainchi meri dhoti dhoti khainchi Ab tu dhoonde kahaan bande Na main Kaaba Kashi main Twitter pe hoon DP meri dekho hu-hu-hu-hu Sun re sun beliya Dil ne dhokha diya Aankhein mili tumse naazni Mere hosh-o-hawaas kho gaye Ho dil ne ro-ro kaha Yeh aankhein hai dil ki zubaan Khwaab roz-roz dekhe naye Ho dil ka bhanwar bole Sun saathiya Chhup na dupatte mein tu oh chhaliya Prem pujaari ke dil ka bayaan hota raha Rota raha priye To phir Matargashti khuli sadak mein Tagdi tadak-bhadak mein Ole gire sulagte se sulagte se sadak mein Chhatri na thi bagal mein Aaya hi na akal mein Ke bhaage hum ya bheege hum akad mein to socha phir Geela hua hai jo sukhaana ho ho ho Chaahe zanana ya mardaana ho ho ho ho Attention Phainka naya paasa Phir de gayi jhaansa Aivein mujhe faansa Teri aisi ki ho taisi zindagi Phainka naya paasa Phir de gayi jhaansa Aivein mujhe faansa Chirkut zindagi', this)"><i class="fas fa-play"></i></button>
+                </div>
+                <div class="music-item" data-song="music/song2.mp3" data-lyrics="Is this the real life? Is this just fantasy? Caught in a landslide, no escape from reality.">
+                    <img src="https://i.scdn.co/image/ab67616d0000b27370c8009a8004e5f86a160af2" alt="Bohemian Rhapsody" class="song-image">
+                    <h3>Bohemian Rhapsody</h3>
+                    <p>Queen</p>
+                    <button class="playBtn" onclick="playMusic('music/song2.mp3', 'Is this the real life? Is this just fantasy? Caught in a landslide, no escape from reality.', this)"><i class="fas fa-play"></i></button>
+                </div>
+                <div class="music-item" data-song="music/song3.mp3" data-lyrics="Just a small-town girl, living in a lonely world. She took the midnight train going anywhere.">
+                    <img src="images/song3.jpg" alt="Don't Stop Believin'" class="song-image">
+                    <h3>Don't Stop Believin'</h3>
+                    <p>Journey</p>
+                    <button class="playBtn" onclick="playMusic('music/song3.mp3', 'Just a small-town girl, living in a lonely world. She took the midnight train going anywhere.', this)"><i class="fas fa-play"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="nowPlaying">
+            <h2>Now Playing</h2>
+            <div id="currentSong">
+                <img id="currentImage" src="" alt="Current Song" class="current-song-image">
+                <h3 id="currentTitle">Select a song to play</h3>
+                <p id="currentArtist">Artist Name</p>
+                <p id="currentLyrics">Lyrics will appear here...</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Learn more about my journey in music and my passion for creating.</p>
+        </section>
+
+        <section id="blog">
+            <h 2>Latest Blog Posts</h2>
+            <p>Check out my latest thoughts on music trends and reviews.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out for collaborations or inquiries!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Music Website. All rights reserved.</p>
+    </footer>
+
+    <audio id="audioPlayer" controls style="display:none;">
+        <source id="audioSource" src="" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="musicc.js"></script>
+</body>
+</html>
