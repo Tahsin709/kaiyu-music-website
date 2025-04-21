@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: url(https://as1.ftcdn.net/v2/jpg/10/27/79/80/1000_F_1027798060_42JTnfVRucqBYXRQLOzQgsXQtAwbFfys.jpg) no-repeat;
+    width: 100%;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    background-size: cover;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+.hero {
+    background: url(https://as1.ftcdn.net/v2/jpg/07/85/74/40/1000_F_785744094_nEFR9pMN4cFrgaa0MTaPKlokUhLykSxR.jpg) no-repeat;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    background-size: cover;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#searchBar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.music-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.music-item:hover {
+    background: #eaeaea;
+}
+
+.song-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+#currentSong {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.current-song-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#currentTitle {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#currentArtist {
+    font-size: 18px;
+    color: #555;
+}
+
+#currentLyrics {
+    font-size: 16px;
+    color: #333;
+    animation: moveLyrics 10s linear infinite;
+}
+
+@keyframes moveLyrics {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+}
